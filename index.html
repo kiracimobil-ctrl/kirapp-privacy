@@ -3,23 +3,34 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>KirApp</title>
+      <title>KirApp - Kira Takip Uygulamasi</title>
       <style>
           body { font-family: -apple-system, sans-serif; background: #1a1a2e; color: white; min-height: 100vh; display:
    flex; align-items: center; justify-content: center; margin: 0; }
           .container { text-align: center; padding: 40px; }
           h1 { font-size: 2.5rem; margin-bottom: 12px; }
           p { color: #a0aec0; margin-bottom: 24px; }
-          a { color: #667eea; text-decoration: none; display: block; margin: 8px 0; }
+          .stores { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+          .store-btn { display: inline-block; padding: 12px 24px; border-radius: 8px; text-decoration: none; color:
+  white; font-weight: 600; }
+          .google { background: linear-gradient(135deg, #667eea, #764ba2); }
+          .huawei { background: linear-gradient(135deg, #c7112d, #ff6b6b); }
+          .links a { color: #667eea; text-decoration: none; display: block; margin: 8px 0; }
       </style>
   </head>
   <body>
       <div class="container">
           <h1>KirApp</h1>
           <p>Kira takibi artik cok kolay</p>
-          <a href="https://play.google.com/store/apps/details?id=com.kiracim.app">Google Play'den indir</a>
-          <a href="privacy-policy.html">Gizlilik Politikasi</a>
-          <a href="account-deletion.html">Hesap Silme</a>
+          <div class="stores">
+              <a href="https://play.google.com/store/apps/details?id=com.kiracim.app" class="store-btn google">Google
+  Play</a>
+              <a href="https://appgallery.huawei.com/app/C116938853" class="store-btn huawei">Huawei AppGallery</a>
+          </div>
+          <div class="links">
+              <a href="kirapp-privacy/privacy-policy.html">Gizlilik Politikasi</a>
+              <a href="kirapp-privacy/account-deletion.html">Hesap Silme</a>
+          </div>
       </div>
   </body>
   </html>
